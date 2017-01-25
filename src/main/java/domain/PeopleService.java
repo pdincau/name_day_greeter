@@ -4,8 +4,8 @@ public class PeopleService {
 
     private People people;
 
-    public PeopleService(People repository) {
-        this.people = repository;
+    public PeopleService(People people) {
+        this.people = people;
     }
 
     public void add(Person person) {
