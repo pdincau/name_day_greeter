@@ -14,6 +14,11 @@
             <artifactId>apollo-http-service</artifactId>
             <version>1.3.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.3</version>
+        </dependency>
     </dependencies>
 
     <build>
