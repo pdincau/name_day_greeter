@@ -8,6 +8,7 @@ import com.spotify.apollo.route.Route;
 import domain.InvalidDataException;
 import domain.PeopleService;
 import domain.Person;
+import infrastructure.InMemoryPeople;
 import okio.ByteString;
 
 import java.io.IOException;
@@ -16,7 +17,7 @@ import static com.spotify.apollo.Status.*;
 
 public class Application {
 
-    private static PeopleService peopleService = new PeopleService();
+    private static PeopleService peopleService = new PeopleService(new InMemoryPeople());
 
     public static void main(String... args) throws LoadingException {
         HttpService.boot(Application::init, "name_day_greeter", args);

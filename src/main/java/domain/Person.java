@@ -12,4 +12,8 @@ public class Person {
         this.name = name;
         this.email = email;
     }
+
+    public boolean hasName(String name) {
+        return this.name.equals(name);
+    }
 }
